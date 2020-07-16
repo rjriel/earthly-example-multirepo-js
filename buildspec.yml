@@ -13,8 +13,6 @@ phases:
     commands:
       - echo Logging in to Docker
       - docker logout
-      - echo $DOCKERHUB_USERNAME
-      - echo $DOCKERHUB_TOKEN
       - docker login --username "$DOCKERHUB_USERNAME" --password "$DOCKERHUB_TOKEN"
   build:
     commands:
