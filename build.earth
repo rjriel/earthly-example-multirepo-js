@@ -6,4 +6,4 @@ WORKDIR /example-js
 build:
     COPY index.js ./
     SAVE ARTIFACT index.js
-    SAVE IMAGE --push
+    SAVE IMAGE --push earthly-example:latest
