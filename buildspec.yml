@@ -12,7 +12,6 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Docker
-      - docker logout
       - docker login --username "$DOCKERHUB_USERNAME" --password "$DOCKERHUB_TOKEN"
   build:
     commands:
